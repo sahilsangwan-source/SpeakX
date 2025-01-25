@@ -1,0 +1,29 @@
+body{
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar {
+    flex: 1 1 30%;
+}
+
+.main-content {
+    flex: 1 1 70%;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+}

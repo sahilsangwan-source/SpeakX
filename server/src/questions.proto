@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+package questionService;
+
+message Question {
+  string id = 1;
+  string type = 2;
+  string anagramType = 3;
+  repeated Block blocks = 4;
+  repeated Option options = 5;
+  string siblingId = 6;
+  string solution = 7;
+  string title = 8;
+}
+
+message Block {
+  string text = 1;
+  bool showInOption = 2;
+  bool isAnswer = 3;
+}
+
+message Option {
+  string text = 1;
+  bool isCorrect = 2;
+}
+
+message GetQuestionsRequest {
+  int32 page = 1;
+  string type = 2;
+  string title = 3;
+}
+
+message GetQuestionsResponse {
+  int32 total = 1;
+  int32 page = 2;
+  int32 pageSize = 3;
+  repeated Question data = 4;
+}
+
+service QuestionService {
+  rpc GetQuestions(GetQuestionsRequest) returns (GetQuestionsResponse);
+}

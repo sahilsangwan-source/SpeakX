@@ -15,7 +15,7 @@ const QuestionList = ({ questions }) => {
     if (!questions || questions.length === 0) {
         return (
             <div className="no-data-message">
-                <h2>There is no data to display.</h2>
+                <h2 >There is no data to display.</h2>
             </div>
         );
     }

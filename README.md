@@ -10,6 +10,7 @@ Start by either forking this repository or cloning it directly to your local mac
 
 # Clone the repository
 git clone https://github.com/sahilsangwan-source/SpeakX
+
 cd SpeakX
 
 2. Install Dependencies

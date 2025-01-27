@@ -9,21 +9,25 @@ Welcome to the SpeakX Project! Follow the steps below to set up the project quic
 Start by either forking this repository or cloning it directly to your local machine:
 
 # Clone the repository
+```bash
 git clone https://github.com/sahilsangwan-source/SpeakX
 
 cd SpeakX
+```
 
 2. Install Dependencies
 
 Navigate to the root folder of the project and run the following command to install all the necessary dependencies:
-
+```bash
 npm run install-all
+```
 
 3. Start the Project
 
 Kickstart the development server by running:
-
+```bash
 npm run start
+```
 
 4. View the Project
 
